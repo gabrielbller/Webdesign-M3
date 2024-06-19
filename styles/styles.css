@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 2em;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    position: relative;
+    overflow: hidden;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+blockquote img {
+    position: absolute;
+    top: 10px;
+    left: -9px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.carousel-item, .col-md-4, .blockquote {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
